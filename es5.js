@@ -9,7 +9,6 @@ var animals = [
 
 animalListing(animals, true);
 
-
 function animalListing( animalArray, listFoods){
 	if(listFoods===undefined){
 		listFoods = true;

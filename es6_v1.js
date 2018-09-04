@@ -24,10 +24,11 @@ function animalListing( animalArray, listFoods){
 		var food1 = foods[0];
 		var food2 = foods[1];
 		var food3 = foods[2];
-		var sentence = "Animal: "+name+" is a "+type+" and is "+height+" meters at "+weight+" kilograms";
+		var sentence = "Animal: "+name+" is a "+type+" and is "+height+" meters at "+(weight*2.2)+" lbs";
 		console.log(sentence);
 		if(listFoods){
 			var foodSentence = "   it likes to eat "+food1+", "+food2+", and "+food3;
+			console.log(foodSentence)
 		}
 	}
 }
