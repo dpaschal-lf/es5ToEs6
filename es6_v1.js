@@ -14,6 +14,7 @@ function animalListing( animalArray, listFoods){
 	if(listFoods===undefined){
 		listFoods = true;
 	}
+	var outputArray = [];
 	for(var animalIndex = 0; animalIndex< animalArray.length; animalIndex++){
 		var thisAnimal = animalArray[animalIndex];
 		var name = thisAnimal.name;
@@ -27,8 +28,9 @@ function animalListing( animalArray, listFoods){
 		var sentence = "Animal: "+name+" is a "+type+" and is "+height+" meters at "+(weight*2.2)+" lbs";
 		console.log(sentence);
 		if(listFoods){
-			var foodSentence = "   it likes to eat "+food1+", "+food2+", and "+food3;
+			sentence += " and it likes to eat "+food1+", "+food2+", and "+food3;
 			console.log(foodSentence)
 		}
 	}
+	return outputArray;
 }
